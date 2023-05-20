@@ -73,4 +73,6 @@ int main() {
 
 
 //Hướng dẫn thực thi chương trình:
-//Ta chỉ cần biên dịch và thực thi chương trình, chương trình sẽ cho ra kết quả : 
+//Ta chỉ cần biên dịch và thực thi chương trình, chương trình sẽ cho ra kết quả :
+//Mang ban dau: 9 5 1 8 3 2 7
+//Mang sau khi sap xep: 1 2 3 5 7 8 9
