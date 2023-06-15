@@ -3,21 +3,21 @@
 #include <vector>
 
 // Hàm tính giá trị đa thức theo luật Horner
-double horner(const std::vector<double>& coefficients, double x) {
-    double result = 0.0;
+double horner(const std::vector<double>& heso, double x) {
+    double kq = 0.0;
 
-    for (int i = coefficients.size() - 1; i >= 0; i--) {
-        result = result * x + coefficients[i];
+    for (int i = heso.size() - 1; i >= 0; i--) {
+        kq = kq * x + heso[i];
     }
 
-    return result;
+    return kq;
 }
 
 int main() {
-    std::vector<double> coefficients = { 2.0, -3.0, 1.0 };  // Đa thức: 2x^2 - 3x + 1
+    std::vector<double> heso = { 2.0, -3.0, 1.0 };  // Đa thức: 2x^2 - 3x + 1
     double x = 2.5;
 
-    double value = horner(coefficients, x);
+    double value = horner(heso, x);
     std::cout << "Gia tri cua da thuc tai x = " << x << " la " << value << std::endl;
 
     return 0;
